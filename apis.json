@@ -1,0 +1,58 @@
+{
+    "name": "IBM Cloud",
+    "description": "<p>The IBM Cloud has been built to help you solve problems and advance opportunities in a world flush with data. Whether it&rsquo;s data you possess, data outside your firewall, or data that&rsquo;s coming, the IBM Cloud helps you protect it, move it, integrate it and unlock intelligence from it &mdash; giving you what it takes to prevail in a competitive market.<\/p>",
+    "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/28560-ibm-containers.jpg",
+    "tags": [
+        "api provider",
+        "have api",
+        "relative data",
+        "service api"
+    ],
+    "created": "2019-12-19",
+    "modified": "2019-12-19",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/ibm-cloud\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "IBM Containers",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/28560-ibm-containers.jpg",
+            "humanURL": "https:\/\/www.ibm.com\/cloud\/",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/ibm-containers-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/ibm-containers.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": "Blog",
+            "url": "https:\/\/www.ibm.com\/blogs\/bluemix\/"
+        },
+        {
+            "type": "Crunchbase",
+            "url": "https:\/\/crunchbase.com\/organization\/product\/ibm-bluemix"
+        },
+        {
+            "type": "Github",
+            "url": "https:\/\/github.com\/IBM-Cloud"
+        },
+        {
+            "type": "Twitter",
+            "url": "https:\/\/twitter.com\/IBMcloud"
+        },
+        {
+            "type": "Website",
+            "url": "https:\/\/www.ibm.com\/cloud\/"
+        }
+    ]
+}
