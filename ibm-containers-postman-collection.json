@@ -1,5 +1,5 @@
 {
-    "id": "2834fdb54668f4f9bda90a9a63caca90",
+    "id": "9bde4c58bb4c51f793bb33d61bd41e42",
     "name": "IBM Containers",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "4f9a39d4ad65f436aa3360308c64b3b0",
+            "id": "10e385524f338b8b9f9c0948ad51ab9d",
             "name": "Build a Docker image from a Dockerfile",
             "url": "httpscontainers-api.ng.bluemix.net\/v3\/build",
             "description": "This API builds a new container image from a Dockerfile that is stored on your local machine and pushes the image to the private Bluemix registry (corresponding IBM Containers command: `cf ic build`).\n\n To push an image to your Bluemix registry, a namespace must be set for the organization. Run `cf ic namespace get` or call the `GET \/registry\/namespaces` API to check if a namespace is already set. If not, run `cf ic namespace set NAMESPACE` or call the `PUT \/registry\/namespaces\/{namespace}` API ",
@@ -72,11 +72,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2834fdb54668f4f9bda90a9a63caca90",
+            "collectionId": "9bde4c58bb4c51f793bb33d61bd41e42",
             "rawModeData": ""
         },
         {
-            "id": "2f91db966559fb59977fa8a009d59d9d",
+            "id": "74d34526dcd078f597440370b9e80f93",
             "name": "Create and start a single container",
             "url": "httpscontainers-api.ng.bluemix.net\/v3\/containers\/create",
             "description": "This endpoint creates and starts a single container in your space based on the Docker image that is specified in the Image field of the request json. A single container in IBM Containers is similar to a container that you create in your local Docker environment. Single containers are a good way to start with IBM Containers and to learn about how containers work in the IBM Cloud and the features that IBM Containers provides. They are also recommended when you want to run simple app tests or durin",
@@ -117,11 +117,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2834fdb54668f4f9bda90a9a63caca90",
+            "collectionId": "9bde4c58bb4c51f793bb33d61bd41e42",
             "rawModeData": ""
         },
         {
-            "id": "bcbe5b583f836ef1150c4d61d39f1f8c",
+            "id": "3b5ea62132642537d07e40ab0948073f",
             "name": "List available public IP addresses in a space",
             "url": "httpscontainers-api.ng.bluemix.net\/v3\/containers\/floating-ips",
             "description": "This endpoint returns a list of all public IP addresses that are allocated to a space and not bound to a container. If you want to list all public IP addresses that are allocated to a space, even those that are already bound to a container, use the `all` query parameter (corrsponding IBM Containers command: `cf ic ip list`).",
@@ -155,11 +155,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2834fdb54668f4f9bda90a9a63caca90",
+            "collectionId": "9bde4c58bb4c51f793bb33d61bd41e42",
             "rawModeData": ""
         },
         {
-            "id": "7153c4f3501a4742df3e795d5a969f68",
+            "id": "92a8bf8d6a5024081f119017cdac7c07",
             "name": "Request a public IP address for a space",
             "url": "httpscontainers-api.ng.bluemix.net\/v3\/containers\/floating-ips\/request",
             "description": "This endpoint requests a new public IP address for a space (corresponding IBM Containers command: `cf ic ip request`). The number of public IP addresses depends on the quota that is assigned to the space. If there is not enough quota left to request a new public IP address, you can either contact your organization manager to increase the quota, or unbind an existing IP address from a container by running `cf ic ip unbind <ip_adress> <container>` command, or  calling the `POST \/container\/{name_or",
@@ -186,11 +186,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2834fdb54668f4f9bda90a9a63caca90",
+            "collectionId": "9bde4c58bb4c51f793bb33d61bd41e42",
             "rawModeData": ""
         },
         {
-            "id": "56a9847a46435fcfe7185d95c8a45eba",
+            "id": "2cc4b58254b02f445f48742265dc8f5c",
             "name": "Release public IP address",
             "url": "httpscontainers-api.ng.bluemix.net\/v3\/containers\/floating-ips\/{ip}\/release",
             "description": "This endpoint releases a public IP address from a space (corresponding IBM Containers command: `cf ic ip release <ip_adress>`). The public IP address is no longer allocated to the space. If a container was bound to the IP address, it is automatically unbound.",
@@ -224,11 +224,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2834fdb54668f4f9bda90a9a63caca90",
+            "collectionId": "9bde4c58bb4c51f793bb33d61bd41e42",
             "rawModeData": ""
         },
         {
-            "id": "aef888e8612355038bd8022584671c4d",
+            "id": "827be89aa53701e9d07a85ca9ce6a26b",
             "name": "List all container groups in a space",
             "url": "httpscontainers-api.ng.bluemix.net\/v3\/containers\/groups",
             "description": "This endpoint returns a list of all container groups in a space independent of their current state. (corresponding IBM Containers command: `cf ic group list`).",
@@ -255,11 +255,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2834fdb54668f4f9bda90a9a63caca90",
+            "collectionId": "9bde4c58bb4c51f793bb33d61bd41e42",
             "rawModeData": ""
         },
         {
-            "id": "ea4b7e3142ee2a15624a9c47f5077bba",
+            "id": "f05527ac874022663e366767198a8ab5",
             "name": "Create and start a container group.",
             "url": "httpscontainers-api.ng.bluemix.net\/v3\/containers\/groups",
             "description": "This endpoint creates and starts a new container group in your space. A container group consists of two or more single containers that are all created from the same container image and as a consequence are configured in the same way. Container groups offer different options at no cost to make your app highly available, such as in-built load balancing, auto-recovery of unhealthy container instances, and auto-scaling of container instances based on CPU and memory usage.\n\nTo create a container grou",
@@ -293,11 +293,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2834fdb54668f4f9bda90a9a63caca90",
+            "collectionId": "9bde4c58bb4c51f793bb33d61bd41e42",
             "rawModeData": ""
         },
         {
-            "id": "e642295e3eb9ddbbdaaa46286b89265b",
+            "id": "9d6c9947da6e854b3a806490e0a6eb7a",
             "name": "Stop and delete all container instances in a container group.",
             "url": "httpscontainers-api.ng.bluemix.net\/v3\/containers\/groups\/{name_or_id}",
             "description": "Stops and deletes the container instances that run in a container group (corresponding IBM Containers command: `cf ic group rm <group_name>`). When you delete a container group, all floating private IP addresses are released.",
@@ -338,11 +338,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2834fdb54668f4f9bda90a9a63caca90",
+            "collectionId": "9bde4c58bb4c51f793bb33d61bd41e42",
             "rawModeData": ""
         },
         {
-            "id": "a00309f428a41c2afc1f961c1e56d334",
+            "id": "560892262eb3fc4453cae0c3b5deb183",
             "name": "Inspect a container group.",
             "url": "httpscontainers-api.ng.bluemix.net\/v3\/containers\/groups\/{name_or_id}",
             "description": "This endpoint retrieves detailed information about a container group with a given name (corresponding IBM Containers command: `cf ic group inspect GROUP`).",
@@ -376,11 +376,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2834fdb54668f4f9bda90a9a63caca90",
+            "collectionId": "9bde4c58bb4c51f793bb33d61bd41e42",
             "rawModeData": ""
         },
         {
-            "id": "540b209988fba8989fa570761174d24d",
+            "id": "d44498093448098b7b82550577453c57",
             "name": "Update a container group.",
             "url": "httpscontainers-api.ng.bluemix.net\/v3\/containers\/groups\/{name_or_id}",
             "description": "Update the number of container instances that run in a container group (corresponding IBM Containers command: `cf ic group update <option> <group>`). \n\nNote: You can run only one update at a time.  \n\n The desired number is the number of container instances that you require. It must be within the current limits of Max and Min. To increase the number of desired container instances above the Max value, you must first execute an update on the Max value. Once this update is completed, you can increas",
@@ -421,11 +421,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2834fdb54668f4f9bda90a9a63caca90",
+            "collectionId": "9bde4c58bb4c51f793bb33d61bd41e42",
             "rawModeData": ""
         },
         {
-            "id": "f1e8f58337868dfda72dcce3e11654e0",
+            "id": "94b6a3d1af7dde97306e61bc2ee58e82",
             "name": "Map a public route to a container group.",
             "url": "httpscontainers-api.ng.bluemix.net\/v3\/containers\/groups\/{name_or_id}\/maproute",
             "description": "If you want your container group to be accessible from the Internet, you need to expose a public port and map a public route to it (corresponding IBM Containers command: `cf ic route map -n <host> -d <domain> <group>`). Every route consists of the host name and domain.",
@@ -466,11 +466,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2834fdb54668f4f9bda90a9a63caca90",
+            "collectionId": "9bde4c58bb4c51f793bb33d61bd41e42",
             "rawModeData": ""
         },
         {
-            "id": "ae1e8c8638ae61f1957a0c360f85382b",
+            "id": "5910b3b42042ad817063ee81308fdd46",
             "name": "Unmap a public route from a container group",
             "url": "httpscontainers-api.ng.bluemix.net\/v3\/containers\/groups\/{name_or_id}\/unmaproute",
             "description": "This endpoint unmaps a public route from a container group (corresponding IBM Containers command: `cf ic route unmap -n <host> -d <domain> <group>`). If no other public route is mapped to the container group, then the container group is no longer available from the internet. \n\n When you unmap a route from a container group, the route is not deleted and can be mapped to other container groups. ",
@@ -511,11 +511,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2834fdb54668f4f9bda90a9a63caca90",
+            "collectionId": "9bde4c58bb4c51f793bb33d61bd41e42",
             "rawModeData": ""
         },
         {
-            "id": "82890e04a401c8356d9c7891c8350c0b",
+            "id": "f5d370a1c536b6d205f625e49de3e8e9",
             "name": "List single containers in a space.",
             "url": "httpscontainers-api.ng.bluemix.net\/v3\/containers\/json",
             "description": "This endpoint returns a list of all single containers in a space that are currently in a running state (corresponding IBM Containers command: `cf ic ps`). To list all single containers independent of their current state, set the `all` query parameter to true.",
@@ -556,11 +556,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2834fdb54668f4f9bda90a9a63caca90",
+            "collectionId": "9bde4c58bb4c51f793bb33d61bd41e42",
             "rawModeData": ""
         },
         {
-            "id": "9e2aa402e1238adfe8dda413bb2e8e4f",
+            "id": "e571342105d9d957a7b24c0e34d2eb8b",
             "name": "List messages for the user",
             "url": "httpscontainers-api.ng.bluemix.net\/v3\/containers\/messages",
             "description": "This endpoint retrieves all IBM Containers system messages for the user.",
@@ -587,11 +587,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2834fdb54668f4f9bda90a9a63caca90",
+            "collectionId": "9bde4c58bb4c51f793bb33d61bd41e42",
             "rawModeData": ""
         },
         {
-            "id": "e45cd334c059961df9264abeb0b4c6f3",
+            "id": "64094f61c9cfdb506b590820a1332f52",
             "name": "Retrieve organization and space specific quota",
             "url": "httpscontainers-api.ng.bluemix.net\/v3\/containers\/quota",
             "description": "Retrieve the quota that is assigned to the organization and space.",
@@ -618,11 +618,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2834fdb54668f4f9bda90a9a63caca90",
+            "collectionId": "9bde4c58bb4c51f793bb33d61bd41e42",
             "rawModeData": ""
         },
         {
-            "id": "86cc306928881526f24cc49872e6160e",
+            "id": "20fc96839848bd9631b60d36a0d29c73",
             "name": "Update space quota",
             "url": "httpscontainers-api.ng.bluemix.net\/v3\/containers\/quota",
             "description": "This endpoint updates the quota that is allocated to a Bluemix space. \n\n **Note**: Only paid accounts are eligbile to update the space quota. If you are using a free-trial account, upgrade to a paid account first.",
@@ -656,11 +656,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2834fdb54668f4f9bda90a9a63caca90",
+            "collectionId": "9bde4c58bb4c51f793bb33d61bd41e42",
             "rawModeData": ""
         },
         {
-            "id": "83ad017f67d6dedbcb1836c681529a75",
+            "id": "048ef879d299e406cb8837f98c825b8b",
             "name": "List container sizes and quota limits",
             "url": "httpscontainers-api.ng.bluemix.net\/v3\/containers\/usage",
             "description": "This endpoint returns a list of available container sizes and the quota limit and usage for the space. \n\n- Container sizes: A list of available container sizes indicating the amount of container memory, disk space and virtual CPUs that can be assigned to the container.\n- Quota limit: Lists the number of containers, public IP addresses, available container memory, and virtual CPUS that are allocated to a space. \n- Quota usage: Lists the current number of containers, images, and public IP addresse",
@@ -687,11 +687,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2834fdb54668f4f9bda90a9a63caca90",
+            "collectionId": "9bde4c58bb4c51f793bb33d61bd41e42",
             "rawModeData": ""
         },
         {
-            "id": "ff5f66c15a7ff1dcf2c6527b4c47ba18",
+            "id": "c32f66970ebe34f28cd6e53f88a631c8",
             "name": "List latest API version",
             "url": "httpscontainers-api.ng.bluemix.net\/v3\/containers\/version",
             "description": "This endpoint retrieves a list of all microservices that are used in the IBM Containers service with their current build version. This method does not require authentication.",
@@ -710,11 +710,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2834fdb54668f4f9bda90a9a63caca90",
+            "collectionId": "9bde4c58bb4c51f793bb33d61bd41e42",
             "rawModeData": ""
         },
         {
-            "id": "2bc51f89f466e26eb0898bed849b8b32",
+            "id": "f7f81d1f9975f4f4b0bb4f15e2bc1c00",
             "name": "List the current state of a container.",
             "url": "httpscontainers-api.ng.bluemix.net\/v3\/containers\/{id}\/status",
             "description": "This endpoint returns the current state of a container. This state can either be a transient state, such as BUILDING and NETWORKING, or a non-transient state, such as RUNNING, SHUTDOWN, CRASHED, or SUSPENDED.",
@@ -748,11 +748,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2834fdb54668f4f9bda90a9a63caca90",
+            "collectionId": "9bde4c58bb4c51f793bb33d61bd41e42",
             "rawModeData": ""
         },
         {
-            "id": "d26acb31a49c87c76cec521e8481f6db",
+            "id": "374c584a5b869161e8acd4bcb4204813",
             "name": "Remove a single container",
             "url": "httpscontainers-api.ng.bluemix.net\/v3\/containers\/{name_or_id}",
             "description": "Remove a single container that is identified by container ID or name from a space (corresponding IBM Containers command: `cf ic delete <container>`). The container must be stopped before it can be deleted, unless the `force` query parameter is set to true.",
@@ -793,11 +793,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2834fdb54668f4f9bda90a9a63caca90",
+            "collectionId": "9bde4c58bb4c51f793bb33d61bd41e42",
             "rawModeData": ""
         },
         {
-            "id": "bff617b3d651779c87b7be89531d217b",
+            "id": "2560836800f882d796f955af4f3703ec",
             "name": "Bind a public IP address to a single container",
             "url": "httpscontainers-api.ng.bluemix.net\/v3\/containers\/{name_or_id}\/floating-ips\/{ip}\/bind",
             "description": "This endpoint binds an available public IP address to a single container (corresponding IBM Containers command: `cf ic ip bind <ip_adress> <container>`). After a container is bound to a public IP address, it can be accessed at `https:\/\/<public_ip_adress>:<public_port>`.",
@@ -838,11 +838,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2834fdb54668f4f9bda90a9a63caca90",
+            "collectionId": "9bde4c58bb4c51f793bb33d61bd41e42",
             "rawModeData": ""
         },
         {
-            "id": "035b46c2b70823e18acea9db2732fa56",
+            "id": "1c15c15959faa65b0183130f1ba4a6f3",
             "name": "Unbind a public IP address from a container",
             "url": "httpscontainers-api.ng.bluemix.net\/v3\/containers\/{name_or_id}\/floating-ips\/{ip}\/unbind",
             "description": "This endpoint unbinds a public IP address from a container (corresponding IBM Containers command: `cf ic ip unbind <ip_adress> <container>`). The container that is unbound from the IP address will not be accessible from the internet anymore. The public IP address will be further allocated to the space and can be used to be bound to other containers. ",
@@ -883,11 +883,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2834fdb54668f4f9bda90a9a63caca90",
+            "collectionId": "9bde4c58bb4c51f793bb33d61bd41e42",
             "rawModeData": ""
         },
         {
-            "id": "9c932486aa113b64d5f291a985953756",
+            "id": "d61b7d77ec35becaa6c462585ea5f5df",
             "name": "Inspect a single container",
             "url": "httpscontainers-api.ng.bluemix.net\/v3\/containers\/{name_or_id}\/json",
             "description": "This endpoint retrieves detailed information about a single container (corresponding IBM Containers command: `cf ic inspect <container>`).",
@@ -921,11 +921,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2834fdb54668f4f9bda90a9a63caca90",
+            "collectionId": "9bde4c58bb4c51f793bb33d61bd41e42",
             "rawModeData": ""
         },
         {
-            "id": "e4617d22af3166d016f44d90783cc166",
+            "id": "a01fd83daa6f6b9f70cd4dfc98a5c022",
             "name": "Pause a single container",
             "url": "httpscontainers-api.ng.bluemix.net\/v3\/containers\/{name_or_id}\/pause",
             "description": "Pause all processes in a running single container with a given container ID or name (corresponding IBM Containers command: `cf ic pause <container>`).",
@@ -959,11 +959,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2834fdb54668f4f9bda90a9a63caca90",
+            "collectionId": "9bde4c58bb4c51f793bb33d61bd41e42",
             "rawModeData": ""
         },
         {
-            "id": "730f4278f4c9712e10dedaa24d1341fa",
+            "id": "9b9d473a23210c907bae0ba8b90019f1",
             "name": "Rename a single container",
             "url": "httpscontainers-api.ng.bluemix.net\/v3\/containers\/{name_or_id}\/rename",
             "description": "Change the current name of an existing single container that is identified by the container ID or name (corresponding IBM Containers command: `cf ic rename <old_name> <new_name>`). ",
@@ -1004,11 +1004,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2834fdb54668f4f9bda90a9a63caca90",
+            "collectionId": "9bde4c58bb4c51f793bb33d61bd41e42",
             "rawModeData": ""
         },
         {
-            "id": "385545aabb9da0b69cd2e5c5d8a579b3",
+            "id": "5702e0436ddc1b3d652188c8bf7e8b7b",
             "name": "Restart a single container",
             "url": "httpscontainers-api.ng.bluemix.net\/v3\/containers\/{name_or_id}\/restart",
             "description": "Restart a container with a given container ID or name (corresponding IBM Containers command: `cf ic restart <container>`).",
@@ -1049,11 +1049,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2834fdb54668f4f9bda90a9a63caca90",
+            "collectionId": "9bde4c58bb4c51f793bb33d61bd41e42",
             "rawModeData": ""
         },
         {
-            "id": "05fe3f133830f8a3d4e4605ef2712b1c",
+            "id": "be7b719ca9796e0a8dab7106327e86cd",
             "name": "Start a single container",
             "url": "httpscontainers-api.ng.bluemix.net\/v3\/containers\/{name_or_id}\/start",
             "description": "Start a single container with a given container name or ID (corresponding IBM Containers command: `cf ic start <container>`).",
@@ -1087,11 +1087,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2834fdb54668f4f9bda90a9a63caca90",
+            "collectionId": "9bde4c58bb4c51f793bb33d61bd41e42",
             "rawModeData": ""
         },
         {
-            "id": "0de843178760a6278df666bef111a503",
+            "id": "434c5a71dd371943259eea104cd5acb5",
             "name": "Stop a single container",
             "url": "httpscontainers-api.ng.bluemix.net\/v3\/containers\/{name_or_id}\/stop",
             "description": "Stop a single container with a given container name or ID (corresponding IBM Containers command: `cf ic stop <container>`).",
@@ -1132,11 +1132,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2834fdb54668f4f9bda90a9a63caca90",
+            "collectionId": "9bde4c58bb4c51f793bb33d61bd41e42",
             "rawModeData": ""
         },
         {
-            "id": "c5055db1ec548bbd0bcbd20c7fb92dc0",
+            "id": "af10f908690b8913311f36c9967e21d8",
             "name": "Unpause a single container",
             "url": "httpscontainers-api.ng.bluemix.net\/v3\/containers\/{name_or_id}\/unpause",
             "description": "Unpause all processes that are currently stopped inside a single containers with a given container ID or name (corresponding IBM Containers command: `cf ic unpause <container>`).",
@@ -1170,11 +1170,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2834fdb54668f4f9bda90a9a63caca90",
+            "collectionId": "9bde4c58bb4c51f793bb33d61bd41e42",
             "rawModeData": ""
         },
         {
-            "id": "c4ce9a72c0dc7fddc5c0db3ac9a27c36",
+            "id": "fd142d3fdc6f0d32ea3e8f4b2f225acb",
             "name": "List all Docker images that are available in your private Bluemix registry.",
             "url": "httpscontainers-api.ng.bluemix.net\/v3\/images\/json",
             "description": "This endpoint returns a list of all available Docker images in a private Bluemix registry (corresponding IBM Containers command: `cf ic images`.",
@@ -1201,11 +1201,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2834fdb54668f4f9bda90a9a63caca90",
+            "collectionId": "9bde4c58bb4c51f793bb33d61bd41e42",
             "rawModeData": ""
         },
         {
-            "id": "50cb569cb340d4f4b9794fa2224a988f",
+            "id": "0ebcc24d599834fbccca3862649a4bab",
             "name": "Remove a Docker image.",
             "url": "httpscontainers-api.ng.bluemix.net\/v3\/images\/{id}",
             "description": "Remove a Docker image from the private Bluemix registry that is identified by the image ID (corresponding IBM Containers command: `cf ic rmi <image>`).",
@@ -1239,11 +1239,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2834fdb54668f4f9bda90a9a63caca90",
+            "collectionId": "9bde4c58bb4c51f793bb33d61bd41e42",
             "rawModeData": ""
         },
         {
-            "id": "c5f6ea90f06ec95edd89ef1c6d588de9",
+            "id": "8d97af725e7b61154933f8839281b7a8",
             "name": "Inspect a Docker image in private Bluemix registry",
             "url": "httpscontainers-api.ng.bluemix.net\/v3\/images\/{name_or_id}\/json",
             "description": "This endpoint returns detailed information about a Docker image that is stored in the private Bluemix registry of an organization (corresponding IBM Containers command: `cf ic inspect <image_name_or_id>`).",
@@ -1277,11 +1277,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2834fdb54668f4f9bda90a9a63caca90",
+            "collectionId": "9bde4c58bb4c51f793bb33d61bd41e42",
             "rawModeData": ""
         },
         {
-            "id": "369ae3d405d0531556f1edfaadb48c72",
+            "id": "3ff8300a6a58a6b2e23698373ccca10d",
             "name": "Retrieve the namespace of an organization.",
             "url": "httpscontainers-api.ng.bluemix.net\/v3\/registry\/namespaces",
             "description": "This endpoint retrieves the namespace that was set for the organization that owns the current space (corresponding IBM Containers command: `cf ic namespace get`).",
@@ -1308,11 +1308,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2834fdb54668f4f9bda90a9a63caca90",
+            "collectionId": "9bde4c58bb4c51f793bb33d61bd41e42",
             "rawModeData": ""
         },
         {
-            "id": "2ec51d2bc956b1bb4780b6b765e7ac81",
+            "id": "34e328b09c4cd62830b467f6d6ce0382",
             "name": "Check the availability of a namespace",
             "url": "httpscontainers-api.ng.bluemix.net\/v3\/registry\/namespaces\/{namespace}",
             "description": "This endpoint checks whether a namespace is available in Bluemix and can be used to set up the private Docker images registry for an organization. When a HTTP code `201 Ok` is returned, the namespace is already assigned to another organization in Bluemix and cannot be used. When a HTTP code `404 Not found` is returned, the namespace can be used for your organization. \n\n Consider the following rules when choosing a namespace for your organization: \n\n- Every organization can have one namespace at ",
@@ -1346,11 +1346,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2834fdb54668f4f9bda90a9a63caca90",
+            "collectionId": "9bde4c58bb4c51f793bb33d61bd41e42",
             "rawModeData": ""
         },
         {
-            "id": "a21a2677fca9d3096e65ec94b4096eff",
+            "id": "96578f552f7d295218c74735280da76c",
             "name": "Set a namespace for your private Bluemix registry.",
             "url": "httpscontainers-api.ng.bluemix.net\/v3\/registry\/namespaces\/{namespace}",
             "description": "Set up your own Docker images registry in Bluemix by defining a namespace for your organization (corresponding IBM Containers command: `cf ic namespace set <namespace>`). The namespace is used to generate a unique URL to your private Bluemix registry. In your private registry you store all Docker images that you want to share across your organization. To create a container from an image, you must first push the image to your registry. \n\n The namespace cannot be changed after is has been set. Con",
@@ -1384,11 +1384,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2834fdb54668f4f9bda90a9a63caca90",
+            "collectionId": "9bde4c58bb4c51f793bb33d61bd41e42",
             "rawModeData": ""
         },
         {
-            "id": "c7ea4e89f630169587c046d157339783",
+            "id": "92e478eccf505e9e7a9e73a7bd1cc18c",
             "name": "Retrieve the TLS Certificate",
             "url": "httpscontainers-api.ng.bluemix.net\/v3\/tlskey",
             "description": "This endpoint returns the TLS (Transport Layer Security) certificate to the user (corresponding IBM Containers command: `cf ic login`). The TLS certificate is a SSL certificate that is used to authenticate the user's CLI with the IBM Containers service and to establish a secure communication between the user's local machine and the container in Bluemix.",
@@ -1415,11 +1415,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2834fdb54668f4f9bda90a9a63caca90",
+            "collectionId": "9bde4c58bb4c51f793bb33d61bd41e42",
             "rawModeData": ""
         },
         {
-            "id": "a69bb4c2f6d2a72c553e44d443bd7f16",
+            "id": "37183025d570bf1349e310ed86895951",
             "name": "Refresh the TLS Certificate",
             "url": "httpscontainers-api.ng.bluemix.net\/v3\/tlskey\/refresh",
             "description": "This endpoint requests to generate a new TLS (Transport Layer Security) certificate on the server and to update the existing user TLS certificate (corresponding IBM Containers command: `cf ic init`).",
@@ -1446,11 +1446,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2834fdb54668f4f9bda90a9a63caca90",
+            "collectionId": "9bde4c58bb4c51f793bb33d61bd41e42",
             "rawModeData": ""
         },
         {
-            "id": "76ad1afd935e34b36c2c641d3ce24e70",
+            "id": "6a496638dd2f87fe7c917b0332bebbc9",
             "name": "Create a volume in a space",
             "url": "httpscontainers-api.ng.bluemix.net\/v3\/volumes\/create",
             "description": "This endpoints creates a new volume in your space (corresponding IBM Containers command: `cf ic volume create VOLNAME`). A volume is used to persist and access app data between container restarts. Volumes are hosted on file shares that define the available actual storage in Bluemix and the number of input and output transactions per second (IOPS). \n\n After you have created a volume, you must mount it to a container by using the `--volume` option in the `cf ic run` (single containers) or `cf ic g",
@@ -1491,11 +1491,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2834fdb54668f4f9bda90a9a63caca90",
+            "collectionId": "9bde4c58bb4c51f793bb33d61bd41e42",
             "rawModeData": ""
         },
         {
-            "id": "b91246021a9dd8367245d5d3acf75f8d",
+            "id": "986c9de01f485e5398d5f66f37690c76",
             "name": "Create a file share in a space",
             "url": "httpscontainers-api.ng.bluemix.net\/v3\/volumes\/fs\/create",
             "description": "This endpoint creates a new file share in a space (corresponding IBM Containers command: `cf ic volume fs-create FSNAME FSSIZE FSIOPS`). \n\n A file share is a persistent NFS-based (Network File System) storage system that hosts Docker volumes in a Bluemix space and allows a user to store and access container and app-related files. To store files in a file share, you must create a container volume and save the data into this volume.\n\n As soon as you create your first volume in a space with the `cf",
@@ -1529,11 +1529,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2834fdb54668f4f9bda90a9a63caca90",
+            "collectionId": "9bde4c58bb4c51f793bb33d61bd41e42",
             "rawModeData": ""
         },
         {
-            "id": "b60ad33b6d948a916ec38c14edd97f91",
+            "id": "b51fd1164b1dc068f6d1cfe048b53f75",
             "name": "List available file share sizes",
             "url": "httpscontainers-api.ng.bluemix.net\/v3\/volumes\/fs\/flavors\/json",
             "description": "This endpoint returns a list of available file shares in gigabyte (corresponding IBM Containers command: `cf ic volume fs-flavor-list`).",
@@ -1560,11 +1560,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2834fdb54668f4f9bda90a9a63caca90",
+            "collectionId": "9bde4c58bb4c51f793bb33d61bd41e42",
             "rawModeData": ""
         },
         {
-            "id": "b7d62a1f33546d4a17c7c4252af1cfa8",
+            "id": "3bfa65dd062e5301d8cda5843970b3ff",
             "name": "List available file shares in a space",
             "url": "httpscontainers-api.ng.bluemix.net\/v3\/volumes\/fs\/json",
             "description": "This endpoint returns a list of all file shares that are availble in a space (corresponding IBM Containers command: `cf ic volume fs-list`).",
@@ -1591,11 +1591,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2834fdb54668f4f9bda90a9a63caca90",
+            "collectionId": "9bde4c58bb4c51f793bb33d61bd41e42",
             "rawModeData": ""
         },
         {
-            "id": "09fd060419ce65a5cc63f0efdc37e1ef",
+            "id": "dca77fac95e99ec8a51ae72272b28a97",
             "name": "Delete a file share",
             "url": "httpscontainers-api.ng.bluemix.net\/v3\/volumes\/fs\/{name}",
             "description": "This endpoint deletes a file share from a space (corresponding IBM Containers command: `cf ic volume fs-rm FSNAME`).\n\n Before you can delete a file share, all mounted volumes must be deleted first. To delete a volume, run `cf ic volume rm VOLNAME` or call the `DELETE \/volumes\/{name}` API endpoint. \n\n **Note:** To delete a file share you must have been granted organization developer rights.",
@@ -1629,11 +1629,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2834fdb54668f4f9bda90a9a63caca90",
+            "collectionId": "9bde4c58bb4c51f793bb33d61bd41e42",
             "rawModeData": ""
         },
         {
-            "id": "67facff6273b5e3665f1ed3a22feb9b8",
+            "id": "e4669b453ac9172451cf55f24c8b4049",
             "name": "Inspect a file share",
             "url": "httpscontainers-api.ng.bluemix.net\/v3\/volumes\/fs\/{name}\/json",
             "description": "This endpoint returns detailed information about a file share (corresponding IBM Containers command: `cf ic volume fs-inspect FSNAME`).",
@@ -1667,11 +1667,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2834fdb54668f4f9bda90a9a63caca90",
+            "collectionId": "9bde4c58bb4c51f793bb33d61bd41e42",
             "rawModeData": ""
         },
         {
-            "id": "6a1d877e144efc5a7b11eaa6a7ac13fb",
+            "id": "2a28a485e2420f8d301298364057ec2e",
             "name": "List all volumes for a space",
             "url": "httpscontainers-api.ng.bluemix.net\/v3\/volumes\/json",
             "description": "This endpoint returns a list of all volumes that are available in the given space (corresponding IBM Containers command: `cf ic volume list`).",
@@ -1698,11 +1698,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2834fdb54668f4f9bda90a9a63caca90",
+            "collectionId": "9bde4c58bb4c51f793bb33d61bd41e42",
             "rawModeData": ""
         },
         {
-            "id": "f328ae8ed1a3c636c12fe3675c129f6a",
+            "id": "466a47cc650f75e3064e0c4be3c4280c",
             "name": "Delete a volume",
             "url": "httpscontainers-api.ng.bluemix.net\/v3\/volumes\/{name}",
             "description": "Delete a volume with a given name from a space (corresponding IBM Containers command: `cf ic volume rm VOLNAME`). To delete a volume, all mounted containers must be unmounted first. After the volume is deleted, the data that are stored in the volume are lost. ",
@@ -1736,11 +1736,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2834fdb54668f4f9bda90a9a63caca90",
+            "collectionId": "9bde4c58bb4c51f793bb33d61bd41e42",
             "rawModeData": ""
         },
         {
-            "id": "7604f284ca75f936fb5147aab44bb356",
+            "id": "5fe1839a8bda24dd92c3ad7bc509d79b",
             "name": "Share a volume with another space",
             "url": "httpscontainers-api.ng.bluemix.net\/v3\/volumes\/{name}",
             "description": "This endpoint provisions an existing volume that was created in one space to another space within the same organization. Single containers and container groups in each space can read and write to the shared volume. The volume remains owned by the original space it was created in, including management and billing. For example, the volume can be deleted from the original space only.",
@@ -1781,11 +1781,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2834fdb54668f4f9bda90a9a63caca90",
+            "collectionId": "9bde4c58bb4c51f793bb33d61bd41e42",
             "rawModeData": ""
         },
         {
-            "id": "faaee6c54d8db92bebbe2647f54ef45a",
+            "id": "758c1e178ade5da003aaf16170442d5f",
             "name": "Retrieve detailed information about a volume. ",
             "url": "httpscontainers-api.ng.bluemix.net\/v3\/volumes\/{name}\/json",
             "description": "Retrieve a detailed list of information about a volume that is identified by the volume name (corresponding IBM Containers command: `cf ic volume inspect VOLNAME`).",
@@ -1819,7 +1819,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2834fdb54668f4f9bda90a9a63caca90",
+            "collectionId": "9bde4c58bb4c51f793bb33d61bd41e42",
             "rawModeData": ""
         }
     ]
